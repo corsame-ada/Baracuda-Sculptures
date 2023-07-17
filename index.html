@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baracuda Sculptures</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/logo_b.png">
+        <link rel="stylesheet" href="style.css">
+        <script src="java.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("vOZ5EeFKw8nQxADYS");
+            })();
+        </script>
+
+            <div id="header" onmouseenter="myEnterFunction()" onmouseleave="myOutFunction()">
+                <div class="title">
+                    <p><h1>Baracuda</h1><img onclick="topFunction()" src="img/logo_b.png" class="logo"></a><h1>Sculptures</h1></p>
+                </div>
+                <hr>
+                <div class="navbar">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav">Home<i class="arrow down"></i></a>
+                            <ul class="dropdown">
+                                <li onclick="scrollAbout()"><a>About</a></li>
+                                <li><a href="#Sculptor">The Sculptor</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="gallery.html" class="nav">Gallery<i class="arrow down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="gallery.html">Miniature</a></li>
+                                <li><a href="gallery.html#Lifesize">Lifesize</a></li>
+                                <li><a href="gallery.html#Diorama">Wall Diorama</a></li>
+                                <li><a href="gallery.html#Mascot">Mascot Costume</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#Contact" class="nav">Contact Us<i class="arrow down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#Contact">Email</a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100083118199043" target="_blank">Facebook</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                
+        <div class="container">
+            <div id="About">
+                <div class="quote">
+                    <p class="text-header1">‘If you get tired, learn to rest, not to quit.’ -Banksy</p>
+                </div>
+                <div class="main">
+                    <div class="video-container">
+                        <video autoplay loop muted src="vid/sculpting2.mp4"></video>
+                    </div>
+                    <div class="video-caption"><center>
+                        <div class="service-images">
+                            <a href="gallery.html#Lifesize">
+                            <div class="img-container">
+                                <div class="img-caption">Life-size Sculpture</div>                                
+                                <div class="img1"></div> 
+                            </div>
+                            </a>
+                            <a href="gallery.html#Miniature">
+                            <div class="img-container">
+                                <div class="img-caption">Miniature Sculpture</div>
+                                <div class="img2"></div> 
+                            </div>
+                            </a>
+                            <a href="gallery.html#Diorama">
+                            <div class="img-container">
+                                <div class="img-caption">Wall Diorama</div>
+                                <div class="img3"></div> 
+                            </div>
+                            </a>
+                            <a href="gallery.html#Mascot">
+                            <div class="img-container">
+                                <div class="img-caption">Mascot</div>
+                                <div class="img4"></div> 
+                            </div>
+                            </a>
+                            <div class="text">
+                                <p>Baracuda Sculptures offer services such as miniature and life-size sculptures, wall dioramas, and mascot costume making.</p>
+                            </div></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-med"></div>
+            </div>
+
+            <center><br><img src="img/l-br0.png" width="700px"><br></center>
+
+            <div id="Sculptor">
+                <div class="block"></div>
+                <div class="main">
+                    <h2>The Sculptor</h2>
+                    <br>
+                    <div class="img-container2">
+                        <div class="img-caption"></div>
+                        <div class="img5"></div> 
+                    </div>
+                    <div class="sculptor-capt">
+                    <div class="text3">
+                        <p>Felicito M. Corsame</p>
+                    </div>
+                    <div class="text2">
+                        <p>He started his business on the year 2022. His works can be seen at the well-known hotel & resort Torres Farm. 
+                            Currently, he has an ongoing 40-feet airplane replica project.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="block-med"></div>
+            </div>
+
+            <center><br><img src="img/l-br0.png" width="700px"><br></center>
+
+            <div id="Contact">
+                <div class="block-med"></div>
+                <div class="footer">
+                    <center>
+                    <div id="Form">
+                        <h2>Contact Us!</h2>
+                        <br>
+                        <div>
+                          <h3 for="name">Name</h3>
+                          <input type="text" class="form-control" id="name" placeholder="Enter your name" required/>
+                        </div>
+                        <div>
+                          <h3 for="email">Email</h3>
+                          <input type="email" class="form-control" id="email" placeholder="Enter your email address" required/>
+                        </div>
+                        <div>
+                          <h3 for="message">Message</h3>
+                          <textarea class="form-control" id="message" rows="10" cols="70" placeholder="Thoughts? Questions? Interested in our work? Drop us a message here!" required></textarea>
+                        </div>
+                        <br>
+                        <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+                    </div>
+                    </center>
+                </div>
+                <div class="block-small"></div>
+            </div>
+    </body>
+</html>
